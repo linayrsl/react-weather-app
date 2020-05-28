@@ -1,0 +1,27 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    //background-image: url("../src/images/animals.jpg");
+    //background-repeat: no-repeat;
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
+
+    &::after {
+        content: "";
+        background-image: url("../src/images/umbrellas.jpg");
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+
